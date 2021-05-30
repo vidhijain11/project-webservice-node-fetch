@@ -1,0 +1,53 @@
+{
+  "name": "project-webservice-node-fetch",
+  "version": "1.0.0",
+  "description": "Rest api testing using node-fetch.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vidhijain11/project-webservice-node-fetch.git"
+  },
+  "author": "Vidhi Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vidhijain11/project-webservice-node-fetch/issues"
+  },
+  "homepage": "https://github.com/vidhijain11/project-webservice-node-fetch#readme",
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "mochawesome": "^6.2.1",
+    "chai-json-schema": "^1.5.1",
+    "jsonpath": "^1.1.1",
+    "mocha": "^8.4.0",
+    "node-fetch": "^2.6.1",
+    "chai": "^4.3.4"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "mocha": {
+    "require": [
+      "@babel/register",
+      "mochawesome/register.js",
+      "hooks.mjs"
+    ]
+  }
+}
